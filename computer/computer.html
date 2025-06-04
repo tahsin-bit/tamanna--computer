@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanna Computer and Photostet</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="moga.css">
+	 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="undes.png" class="logo">
+            <ul id="sidemenu">
+			     <li id="closeMenu"><i class="uil uil-times"></i></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="uil uil-bars" id="openMenu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Tamanna Computer and Photostet</h1>
+            <p id="typing-text">is a very old computer shop in Upazila poriad, Lakshmipur. We provide<br>all computer, photocopy and onlinemoney transfer services.</p>
+        </div>
+    </div>
+</div>
+
+<!--------------------------- Services ------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="uil uil-desktop"></i>
+                <h2>Computer Typing</h2>
+                <p>We are provideing Computer Typing service. like Document, Docs, Official letter<br> 
+                and Application etc. we typing service we provided.</p>
+                
+            </div>
+            <div>
+                <i class="uil uil-focus-add"></i>
+                <h2>Photocopy</h2>
+                <p>We are provideing Photocopy service.<br> 
+                like Document, Docs, Official letter and Application etc. we Photosted service we provided.</p>
+                
+            </div>
+            <div>
+				<i class="uil uil-bill"></i>
+                <h2>Online money transfer</h2>
+                <p>We are provideing online money transfer service. Like Bikas, Nagod, Roket, Upay etc<br> 
+                service we provided. We are provideing Mobile Recharge service. </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------- ABOUT ----------------------------->
+<div id="about">
+    <div class="container">
+	    <h1 class="sub-title">About</h1>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Tuhin vi.JPG">
+            </div>
+            <div class="about-col-2"
+                <p>Abdullah Al Mohammad Ashikur Rahman (Tuhin) is a skilled professional known
+				for his precision in computer typing and expertise in photo editing with Adobe 
+				Photoshop. He excels in photocopying, ensuring high-quality results, and is 
+				proficient in managing office equipment. Tuhin’s diverse skills, attention to 
+				detail, and dedication make him a respected figure in his community, providing 
+				reliable and efficient services across various tasks.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Computer</span><br>I'm a profissional Computer Typing Expeart. I work on this every day</li>
+                        <li><span>Photo Editing</span><br>I'm also a photo editor Expeart. I edit photos by useing photoshop</li>
+						<li><span>Photocopy</span><br>I'm also a profissional Photocopy Expeart. Everyday I photosted many docs.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Computer</span><br>I have 20 years of experience in Computer Typing.</li>
+                        <li><span>Photo Editing</span><br>I have 15 years of experience in Photo Editing.</li>
+                        <li><span>Photocopy</span><br>I have 18 years of experience in Photocopy.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------- Contact Us ---------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="uil uil-phone"></i>01977-622308, 01717-622302, 01557-749117</p>
+                <p><i class="uil uil-envelope-alt"></i>tamannainfo96@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer"><i class="uil uil-facebook-f"></i></a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer"><i class="uil uil-whatsapp-alt"></i></a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"><i class="uil uil-instagram-alt"></i></a>
+                    <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer"><i class="uil uil-telegram-alt"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Write a Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+
+
+function openmenu() {
+    document.getElementById('sidemenu').classList.add('active');
+}
+
+function closemenu() {
+    document.getElementById('sidemenu').classList.remove('active');
+}
+
+// Attach event listeners for mobile menu button
+document.getElementById('openMenu').addEventListener('click', openmenu);
+document.getElementById('closeMenu').addEventListener('click', closemenu);
+
+// Add event listeners to menu links for active state
+const menuLinks = document.querySelectorAll('#sidemenu a');
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuLinks.forEach(item => item.classList.remove('active'));
+        link.classList.add('active');
+        closemenu(); // Close menu when a link is clicked
+    });
+});
+
+
+</script>
+
+</body>
+</html>
